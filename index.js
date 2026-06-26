@@ -19,23 +19,7 @@
   function initGSAPAnimations() {
     gsap.registerPlugin(ScrollTrigger);
 
-    // HEADER
-    gsap.from('.header', {
-      y: -100,
-      opacity: 0,
-      duration: 1,
-      ease: 'power3.out'
-    });
-
-    // Header logo bounce on load
-    gsap.from('.logo h1', {
-      scale: 0.5,
-      opacity: 0,
-      duration: 0.8,
-      delay: 0.3,
-      ease: 'back.out(1.7)'
-    });
-
+   
     // Nav links stagger in
     gsap.from('.header-content .nav-link, .header-content #link, .btn-book', {
       y: -20,
@@ -128,7 +112,7 @@
 
     // ABOUT SECTION
     gsap.from('#about .page1 img', {
-      x: -60,
+      // x: -60,
       opacity: 0,
       scale: 0.9,
       duration: 1,
@@ -174,17 +158,6 @@
       });
     });
 
-    document.querySelectorAll('#about .page1 img').forEach(img => {
-      img.addEventListener('mouseenter', () => {
-        gsap.to(img, { scale: 1.08, 
-                      duration: 0.4, 
-                      ease: 'power2.out' });
-      });
-      img.addEventListener('mouseleave', () => {
-        gsap.to(img, { scale: 1, duration: 0.4, ease: 'power2.out' });
-      });
-    });
-
     // FOOD MENU TABS
     gsap.from('#menuss .mm', {
       y: 40,
@@ -215,9 +188,9 @@
     const menuContainers = document.querySelectorAll('.chicken-container');
     menuContainers.forEach(container => {
       gsap.from(container.querySelectorAll('.chicken'), {
-        y: 60,
+        // y: 60,
         opacity: 0,
-        x: (index) => index % 2 === 0 ? -30 : 30,
+        // x: (index) => index % 2 === 0 ? -30 : 30,
         duration: 0.7,
         stagger: 0.1,
         ease: 'power2.out',
@@ -229,27 +202,8 @@
       });
     });
 
-    // Menu items hover lift effect
-    document.querySelectorAll('.chicken').forEach(item => {
-      item.addEventListener('mouseenter', () => {
-        gsap.to(item, { 
-          y: -8, 
-          boxShadow: '0 12px 30px rgba(0,0,0,0.15)',
-          duration: 0.3, 
-          ease: 'power2.out' 
-        });
-      });
-      item.addEventListener('mouseleave', () => {
-        gsap.to(item, { 
-          y: 0, 
-          boxShadow: '0 0 0 rgba(0,0,0,0)',
-          duration: 0.3, 
-          ease: 'power2.out' 
-        });
-      });
-    });
 
-    // VIDEO SECTION - Zoom reveal with play button pulse
+    // VIDEO SECTION
     gsap.from('#mymenu .video', {
       scale: 0.9,
       opacity: 0,
@@ -573,6 +527,7 @@
     closeBtn.addEventListener('click', () => {
       nav.classList.remove('open');
       document.body.style.overflow = '';
+      gsap.reverse();
     });
 
     nav.querySelectorAll('a').forEach(link => {

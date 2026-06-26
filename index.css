@@ -920,7 +920,7 @@ input::placeholder {
     display: block;
     position: absolute;
     top: 20px;
-    right: 20px;
+    left: 20px;
     left: auto;
   }
 
@@ -1012,11 +1012,12 @@ input::placeholder {
   .page2 {
     width: 100%;
   }
-
+  .page1 img{
+    margin: auto;
+  }
   .page2 {
     text-align: center;
   }
-
   .line {
     justify-content: center;
   }
