@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Restoran</title>
+
+  <!-- Preconnect for faster font loading -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200..900&family=Nunito:wght@200..1000&family=Pacifico&family=Poppins:wght@100..900&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+
+  <!-- Remix Icon -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.8.0/fonts/remixicon.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="index.css">
+<base target="_blank">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="logo">
+      <h1><i class="fa-solid fa-utensils"></i> Restoran</h1>
+    </div>
+
+    <span id="menu"><i class="ri-menu-3-line"></i></span>
+
+    <nav class="header-content" id="header">
+      <span id="closes"><i class="ri-close-large-line"></i></span>
+      <a href="#" class="nav-link">Home</a>
+      <a href="about.html" target="_blank" class="nav-link">About</a>
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#menuss" class="nav-link">Menu</a>
+
+      <div class="dropdown">
+        <a href="#" id="link">Pages <i class="fa-solid fa-caret-down"></i></a>
+        <div class="dropdown-content">
+          <a href="#contact1">Book Now</a>
+          <a href="#team">Our Team</a>
+          <a href="#testimonial">Testimonial</a>
+        </div>
+      </div>
+
+      <a href="#contact1" class="nav-link">Contact</a>
+      <a href="#contact1" class="btn-book">BOOK A TABLE</a>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="text">
+        <h1>Enjoy Our Delicious Meal</h1>
+        <p>
+         Welcome to Restoran where taste meets quality and comfort. Our meals are crafted with fresh ingredients and a creative touch — perfect for a quick bite or a relaxing dinner. 
+                Delicious food. Cozy vibes. Lasting memories. Come hungry, leave happy!
+        </p>
+        <a href="#contact1" class="hero-btn">BOOK A TABLE</a>
+      </div>
+
+      <div class="image">
+        <img src="images/barbecue.png" alt="Delicious food plate" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="reveal">
+    <div class="cont">
+      <div class="box1">
+        <div class="chef">
+          <span><i class="ri-user-2-fill"></i></span>
+          <h2>Master Chefs</h2>
+          <p>Our master chef combines years of experience and creative techniques to deliver unforgettable flavors in every dish.</p>
+        </div>
+      </div>
+      <div class="box1">
+        <div class="chef">
+          <span><i class="fa-solid fa-utensils"></i></span>
+          <h2>Quality Food</h2>
+          <p>We serve fresh, quality food for a satisfying dining experience.</p>
+        </div>
+      </div>
+      <div class="box1">
+        <div class="chef">
+          <span><i class="ri-shopping-cart-2-line"></i></span>
+          <h2>Online Order</h2>
+          <p>Order your favorite meals online easily and enjoy fast, reliable delivery of delicious, high-quality food.</p>
+        </div>
+      </div>
+      <div class="box1">
+        <div class="chef">
+          <span><i class="ri-customer-service-fill"></i></span>
+          <h2>24/7 Service</h2>
+          <p>We offer 24/7 service, ensuring you can enjoy our delicious meals anytime, day or night, whenever hunger strikes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="reveal">
+    <div class="about">
+      <div class="page1">
+        <img src="images/about-1.jpg" alt="Restaurant interior" loading="lazy">
+        <img src="images/about-2.jpg" alt="Chef cooking" loading="lazy">
+        <img src="images/about-3.jpg" alt="Food preparation" loading="lazy">
+        <img src="images/about-4.jpg" alt="Dining area" loading="lazy">
+      </div>
+
+      <div class="page2">
+        <div class="line">
+          <h2>about us</h2>
+          <hr>
+        </div>
+        <h1>Welcome to <span class="icon-label"><i class="fa-solid fa-utensils"></i></span> Restoran</h1>
+        <h3>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos erat ipsum et lorem et sit, sed stet lorem sit.</h3>
+        <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+
+        <div class="years">
+          <div class="experience">
+            <div class="line1"></div>
+            <h1>15</h1>
+            <p>Years of <span class="ss">Experience</span></p>
+          </div>
+          <div class="experience">
+            <div class="line1"></div>
+            <h1>50</h1>
+            <p>Popular <span class="ss">Master Chefs</span></p>
+          </div>
+        </div>
+
+        <button class="read-more">Read More</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOD MENU -->
+  <section id="menuss" class="reveal">
+    <div class="food">
+      <div class="mm">
+        <div class="line2"></div>
+        <p>Food Menu</p>
+        <div class="line2"></div>
+      </div>
+
+      <div class="break">
+        <div class="label active" id="breakfast" data-target="breakfast">
+          <span class="menu-icon"><i class="ri-cup-fill"></i></span>
+          <a href="#">Popular <b>Breakfast</b></a>
+        </div>
+        <div class="label" id="special" data-target="lunch">
+          <span class="menu-icon"><i class="fa-solid fa-burger"></i></span>
+          <a href="#">Special <b>Lunch</b></a>
+        </div>
+        <div class="label" id="dinner" data-target="dinner">
+          <span class="menu-icon"><i class="fa-solid fa-utensils"></i></span>
+          <a href="#">Lovely <b>Dinner</b></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU ITEMS -->
+  <section id="menu6" class="reveal">
+    <div class="chicken-container block" data-menu="breakfast">
+      <div class="chicken"><div class="a"><img src="images/menu-1.jpg" alt="Chicken Burger" loading="lazy"></div><div class="b"><div class="s"><h2>Chicken Burger</h2><p>$115</p></div><hr><p>Ipsum ipsum clita erat amet dolor justo diam</p></div></div>
+      <div class="chicken"><div class="a"><img src="images/menu-2.jpg" alt="Chicken Burger" loading="lazy"></div><div class="b"><div class="s"><h2>Chicken Burger</h2><p>$115</p></div><hr><p>Ipsum ipsum clita erat amet dolor justo diam</p></div></div>
+      <div class="chicken"><div class="a"><img src="images/menu-3.jpg" alt="Chicken Burger" loading="lazy"></div><div class="b"><div class="s"><h2>Chicken Burger</h2><p>$115</p></div><hr><p>Ipsum ipsum clita erat amet dolor justo diam</p></div></div>
+      <div class="chicken"><div class="a"><img src="images/menu-4.jpg" alt="Chicken Burger" loading="lazy"></div><div class="b"><div class="s"><h2>Chicken Burger</h2><p>$115</p></div><hr><p>Ipsum ipsum clita erat amet dolor justo diam</p></div></div>
+      <div class="chicken"><div class="a"><img src="images/menu-5.jpg" alt="Chicken Burger" loading="lazy"></div><div class="b"><div class="s"><h2>Chicken Burger</h2><p>$115</p></div><hr><p>Ipsum ipsum clita erat amet dolor justo diam</p></div></div>
+      <div class="chicken"><div class="a"><img src="images/menu-6.jpg" alt="Chicken Burger" loading="lazy"></div><div class="b"><div class="s"><h2>Chicken Burger</h2><p>$115</p></div><hr><p>Ipsum ipsum clita erat amet dolor justo diam</p></div></div>
+      <div class="chicken"><div class="a"><img src="images/menu-7.jpg" alt="Chicken Burger" loading="lazy"></div><div class="b"><div class="s"><h2>Chicken Burger</h2><p>$115</p></div><hr><p>Ipsum ipsum clita erat amet dolor justo diam</p></div></div>
+      <div class="chicken"><div class="a"><img src="images/menu-8.jpg" alt="Chicken Burger" loading="lazy"></div><div class="b"><div class="s"><h2>Chicken Burger</h2><p>$115</p></div><hr><p>Ipsum ipsum clita erat amet dolor justo diam</p></div></div>
+    </div>
+
+    <div class="chicken-container" data-menu="lunch">
+      <div class="chicken"><div class="a"><img src="images/menu-2.jpg" alt="Chicken Burger" loading="lazy"></div><div class="b"><div class="s"><h2>Chicken Burger</h2><p>$115</p></div><hr><p>Ipsum ipsum clita erat amet dolor justo diam</p></div></div>
+      <div class="chicken"><div class="a"><img src="images/menu-3.jpg" alt="Chicken Burger" loading="lazy"></div><div class="b"><div class="s"><h2>Chicken Burger</h2><p>$115</p></div><hr><p>Ipsum ipsum clita erat amet dolor justo diam</p></div></div>
+      <div class="chicken"><div class="a"><img src="images/menu-1.jpg" alt="Chicken Burger" loading="lazy"></div><div class="b"><div class="s"><h2>Chicken Burger</h2><p>$115</p></div><hr><p>Ipsum ipsum clita erat amet dolor justo diam</p></div></div>
+      <div class="chicken"><div class="a"><img src="images/menu-4.jpg" alt="Chicken Burger" loading="lazy"></div><div class="b"><div class="s"><h2>Chicken Burger</h2><p>$115</p></div><hr><p>Ipsum ipsum clita erat amet dolor justo diam</p></div></div>
+      <div class="chicken"><div class="a"><img src="images/menu-6.jpg" alt="Chicken Burger" loading="lazy"></div><div class="b"><div class="s"><h2>Chicken Burger</h2><p>$115</p></div><hr><p>Ipsum ipsum clita erat amet dolor justo diam</p></div></div>
+      <div class="chicken"><div class="a"><img src="images/menu-7.jpg" alt="Chicken Burger" loading="lazy"></div><div class="b"><div class="s"><h2>Chicken Burger</h2><p>$115</p></div><hr><p>Ipsum ipsum clita erat amet dolor justo diam</p></div></div>
+      <div class="chicken"><div class="a"><img src="images/menu-8.jpg" alt="Chicken Burger" loading="lazy"></div><div class="b"><div class="s"><h2>Chicken Burger</h2><p>$115</p></div><hr><p>Ipsum ipsum clita erat amet dolor justo diam</p></div></div>
+      <div class="chicken"><div class="a"><img src="images/menu-5.jpg" alt="Chicken Burger" loading="lazy"></div><div class="b"><div class="s"><h2>Chicken Burger</h2><p>$115</p></div><hr><p>Ipsum ipsum clita erat amet dolor justo diam</p></div></div>
+    </div>
+
+    <div class="chicken-container" data-menu="dinner">
+      <div class="chicken"><div class="a"><img src="images/menu-8.jpg" alt="Chicken Burger" loading="lazy"></div><div class="b"><div class="s"><h2>Chicken Burger</h2><p>$115</p></div><hr><p>Ipsum ipsum clita erat amet dolor justo diam</p></div></div>
+      <div class="chicken"><div class="a"><img src="images/menu-7.jpg" alt="Chicken Burger" loading="lazy"></div><div class="b"><div class="s"><h2>Chicken Burger</h2><p>$115</p></div><hr><p>Ipsum ipsum clita erat amet dolor justo diam</p></div></div>
+      <div class="chicken"><div class="a"><img src="images/menu-6.jpg" alt="Chicken Burger" loading="lazy"></div><div class="b"><div class="s"><h2>Chicken Burger</h2><p>$115</p></div><hr><p>Ipsum ipsum clita erat amet dolor justo diam</p></div></div>
+      <div class="chicken"><div class="a"><img src="images/menu-5.jpg" alt="Chicken Burger" loading="lazy"></div><div class="b"><div class="s"><h2>Chicken Burger</h2><p>$115</p></div><hr><p>Ipsum ipsum clita erat amet dolor justo diam</p></div></div>
+      <div class="chicken"><div class="a"><img src="images/menu-4.jpg" alt="Chicken Burger" loading="lazy"></div><div class="b"><div class="s"><h2>Chicken Burger</h2><p>$115</p></div><hr><p>Ipsum ipsum clita erat amet dolor justo diam</p></div></div>
+      <div class="chicken"><div class="a"><img src="images/menu-3.jpg" alt="Chicken Burger" loading="lazy"></div><div class="b"><div class="s"><h2>Chicken Burger</h2><p>$115</p></div><hr><p>Ipsum ipsum clita erat amet dolor justo diam</p></div></div>
+      <div class="chicken"><div class="a"><img src="images/menu-2.jpg" alt="Chicken Burger" loading="lazy"></div><div class="b"><div class="s"><h2>Chicken Burger</h2><p>$115</p></div><hr><p>Ipsum ipsum clita erat amet dolor justo diam</p></div></div>
+      <div class="chicken"><div class="a"><img src="images/menu-1.jpg" alt="Chicken Burger" loading="lazy"></div><div class="b"><div class="s"><h2>Chicken Burger</h2><p>$115</p></div><hr><p>Ipsum ipsum clita erat amet dolor justo diam</p></div></div>
+    </div>
+  </section>
+
+  <!-- VIDEO SECTION -->
+  <section id="mymenu" class="reveal">
+    <div class="video">
+      <span id="playBtn" role="button" tabindex="0" aria-label="Play video">
+        <i class="fa-solid fa-play"></i>
+      </span>
+    </div>
+
+    <!-- YOUTUBE MODAL -->
+    <div class="yt-modal" id="ytModal" role="dialog" aria-label="YouTube video">
+      <div class="yt-box">
+        <span class="close" role="button" tabindex="0" aria-label="Close video">&times;</span>
+        <div class="video-wrapper">
+          <iframe id="ytVideo" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ORDER SECTION -->
+  <section id="order" class="reveal">
+    <div class="container2">
+      <div class="text1">
+        <h1>Order Now & Satisfy Your Cravings</h1>
+        <p>Let us bring the flavors you love straight to your door. From classic comfort dishes to chef-curated specials, every bite is made with care and delivered fresh. Skip the wait — your next favorite meal is just a click away. <span class="span">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, quis.</span></p>
+        <button id="readMoreBtn">Read more <i class="ri-arrow-right-line"></i></button>
+      </div>
+      <div class="imgg">
+        <img src="images/pizza.png" alt="Delicious pizza" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT / RESERVATION -->
+  <section id="contact1" class="reveal">
+    <div class="form-conta  iner">
+      <form id="formReservation">
+        <input type="text" placeholder="Your Name" id="name" required>
+        <input type="tel" id="number" placeholder="Phone Number" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <input type="number" id="number1" placeholder="Number of Guests" min="1" max="50" required>
+        <input type="time" id="time" required>
+        <input type="date" id="date" required>
+        <button type="submit" id="book">BOOK NOW</button>
+      </form>
+      <p id="result"></p>
+    </div>
+    <div class="map-wrapper">
+      <div id="map"></div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="he">
+      <div class="add">
+        <div class="map-title">
+          <span><i class="ri-map-pin-fill"></i></span>
+          <h2>Address</h2>
+        </div>
+        <p>A108 Adam Street<br>New York, NY 535022</p>
+      </div>
+      <div class="phone">
+        <div class="map-title">
+          <span><i class="ri-phone-fill"></i></span>
+          <h2>Contact</h2>
+        </div>
+        <p><strong>Phone:</strong> +234 000 000 0000</p>
+        <p><strong>Email:</strong> info@email.com</p>
+      </div>
+      <div class="opening">
+        <div class="map-title">
+          <span><i class="ri-time-fill"></i></span>
+          <h2>Opening Hours</h2>
+        </div>
+        <p><strong>Mon-Sat:</strong> 8am - 12pm</p>
+        <p><strong>Sunday:</strong> Closed</p>
+      </div>
+      <div class="follow">
+        <a href="#" aria-label="Twitter"><i class="ri-twitter-x-fill"></i></a>
+        <a href="#" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
+        <a href="#" aria-label="Facebook"><i class="ri-facebook-fill"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="ri-linkedin-box-fill"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- GSAP -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- Google Maps -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCESWKBfSjHYkSq2NAU9ZQw7267iFuqC0k&callback=initMap" async defer></script>
+  <script src="index.js"></script>
+</body>
+</html>
