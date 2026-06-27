@@ -15,6 +15,9 @@
     initGSAPAnimations();
   }
 
+  window.addEventListener("resize", () => {
+    ScrollTrigger.refresh();
+});
   // ===== GSAP ANIMATIONS =====
   function initGSAPAnimations() {
     gsap.registerPlugin(ScrollTrigger);
